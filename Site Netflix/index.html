@@ -39,11 +39,15 @@
 	</header>
 
 	<section class="destaque">
+		<video autoplay muted loop src="images/arrow.mp4" class="video-destaque">
+			Seu navegador não suporta vídeo HTML5.
+		</video>
 		<div class="overlay"></div><!--overlay-->
 		<div class="center">
 			<div class="texto-destaque">
-				<h3>Assista a nova animação</h3>
-				<p>Dragon Ball Super segue as aventuras do protagonista Goku e seus amigos, depois de derrotar Majin Buu e trazer paz para Terra mais uma vez. Goku encontra seres de longe mais poderosos e atinge o poder de um deus.</p>
+				<h2>Arrow	</h2>
+				<h3>Assista a nova temporada</h3>
+				<p>A série segue Oliver Queen, um playboy bilionário de Starling City, que passa cinco anos naufragado em uma ilha misteriosa. Após seu retorno à Starling City, ele se reencontra com sua mãe, Moira Queen, sua irmã, Thea Queen, e seu melhor amigo, Tommy Merlyn. </p>
 				<br>
 				<a href=""><i class="fa-solid fa-play"></i> Assistir</a>
 				<a href=""><i class="fa-solid fa-play"></i> Assistir</a>
@@ -51,7 +55,100 @@
 			</div><!--texto destaque-->
 		</div><!--center-->
 	</section><!--destaque-->
-	
 
+	<section class="vitrine">
+		<div class="vitrine-flex">
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/arrow.jpg') ;"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/suits.jpeg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/vikings.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/demolidor.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/punisher.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/lucifer.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/dahmer.png');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/lacasadepapel.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/thewitcher.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/narcos.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+		</div><!--vitrine-flex-->
+
+		<div class="vitrine-flex">
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/dexter.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/round6.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/death.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/breaking.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/desencanto.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/stranger.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/cobra.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/prison.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/banner.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image:url('images/black.jpg');"></div>
+			</div><!--vitrine-single-banner-->
+		</div><!--vitrine-flex-->
+	</section><!--vitrine-->
+	
+	<script src="jquery.js"></script>
+	<script src="slick.min.js"></script>
+
+	<script>
+		$('.vitrine-flex').slick({
+	dots: false,
+	arrows:false,
+  infinite: true,
+  centerMode: false,
+  speed:1000,
+  slidesToShow: 6,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      pauseOnHover:false,
+        responsive: [	
+    {breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }},
+	{breakpoint: 1280,
+      settings: {
+        slidesToShow: 4
+      }}
+	]
+	});
+	</script>
 </body>
 </html>

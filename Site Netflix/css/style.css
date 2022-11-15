@@ -5,7 +5,8 @@
 	font-family: "Helvetica";
 }
 body{
-	background-color: rgb(255, 0, 0);
+	background-color: rgb(0, 0, 0);
+	overflow-x: hidden;
 }
 .clear{
 	clear: both;
@@ -81,9 +82,11 @@ section.destaque{
 	background-size:cover;
 	background-position:center;
 	width: 100%;
-	min-height: 700px;
-	position: absolute;
+	height: 650px;
+	position:relative;
 	z-index: 1;
+	overflow: hidden;
+
 }
 .overlay{
 	z-index: 2;
@@ -94,11 +97,22 @@ section.destaque{
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 }
+.video-destaque{
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
 .texto-destaque{
 	z-index: 3;
 	color: white;
 	position: relative;
-	margin-top: 350px;
+	margin-top: 250px;
+}
+.texto-destaque h2{
+	font-size: 3rem;
+	color: #339933;
 }
 .texto-destaque h3{
 	margin: 20px 0;
@@ -116,8 +130,40 @@ section.destaque{
 	display: inline-block;
 	font-size: 1.5rem;
 	margin-right: 15px;
+	margin-bottom: 20px;
 }
 .texto-destaque a:hover{
 	background-color: white;
 	color: black;
+}
+section.vitrine .vitrine-flex{
+	width: 96%;
+	margin-left: 4%;
+	position: relative;
+	z-index: 4;
+}
+.vitrine-single-banner{
+	width: 100%;
+	padding-top: 23vh;
+	float: left;
+	position: relative;
+}
+.vitrine-wraper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.vitrine-wraper:hover{
+	transition: 0.5s;
+	transform:scale(1.2);
+	z-index: 4;
+}
+
+@media screen and (max-width: 768px){
+	.menu-header{display: none;}
 }
