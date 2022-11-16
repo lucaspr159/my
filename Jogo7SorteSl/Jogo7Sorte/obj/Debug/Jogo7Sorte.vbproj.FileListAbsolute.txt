@@ -1,0 +1,13 @@
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\bin\Debug\Jogo7Sorte.exe.config
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\bin\Debug\Jogo7Sorte.exe
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\bin\Debug\Jogo7Sorte.pdb
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\bin\Debug\Jogo7Sorte.xml
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.vbproj.AssemblyReference.cache
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.Form1.resources
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.Resources.resources
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.vbproj.GenerateResource.cache
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.vbproj.CoreCompileInputs.cache
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.exe
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.xml
+C:\Users\Lucas\source\repos\Jogo7SorteSl\Jogo7Sorte\obj\Debug\Jogo7Sorte.pdb
