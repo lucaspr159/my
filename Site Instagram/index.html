@@ -45,9 +45,119 @@
                     <a href="#"><i class="fa-solid fa-gear"></i></a>
                 </div><!--nome-perfil-->
             </div><!--texto-perfil-->
+            <div class="info-perfil">
+                <p><b>50</b> publicações</p>
+                <p><b>1000</b> seguidores</p>
+                <p><b>100</b> seguindo</p>
+            </div><!--info-perfil-->
+            <div class="descricao-perfil">
+                <h3>Lucas P. Rodrigues</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div><!--descricao-perfil-->
             <div class="clear"></div>
         </div><!--center-->
     </section><!--perfil-descrição-->
+
+    <section class="feed">
+        <div class="center">
+            <div class="line-feed">
+                <div linha="publicacoes" class="single-line-name">
+                    <div style="display: block;" class="line-marcacao"></div>
+                    <p style="font-weight: bold;">publicações</p>
+                </div><!--single-line-name-->
+                <div linha="igtv" class="single-line-name">
+                    <div style="width: 38px;" class="line-marcacao"></div>
+                    <p>igtv</p>
+                </div><!--single-line-name-->
+                <div linha="salvos" class="single-line-name">
+                    <div style="width: 60px;" class="line-marcacao"></div>
+                    <p>salvos</p>
+                </div><!--single-line-name-->
+                <div linha="marcados" class="single-line-name">
+                    <div style="width: 95px;" class="line-marcacao"></div>
+                    <p>marcados</p>
+                </div><!--single-line-name-->
+            </div><!--line-feed-->
+        </div><!--center-->
+    </section><!--feed-->
+
+    <section id="publicacoes">
+        <div class="center">
+            <div style="background-image:url('./images/publi1.png') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610912652422-5DB14EV6QR7GBFBE9U2W/41.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610913054739-Z2DKMFOTWB46J8WZLOU7/47.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610908900242-GVWJSW9UAPUONKXC5I44/13.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://wallpaperaccess.com/full/6319352.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://c4.wallpaperflare.com/wallpaper/813/960/923/anime-boys-jujutsu-kaisen-satoru-gojo-anime-food-hd-wallpaper-preview.jpg') ;" class="publicacao-single"></div>
+        </div><!--center-->
+    </section>
+
+    <section id="igtv">
+        <div class="center">
+            <div class="container-videos"></div>
+                <video controls src="./videos/youname.mp4"></video>
+                <video controls src="./videos/demon.mp4"></video>
+                <video controls src="./videos/jujutsu.mp4"></video>
+                <video controls src="./videos/youname.mp4"></video>
+                <video controls src="./videos/demon.mp4"></video>
+                <video controls src="./videos/jujutsu.mp4"></video>
+            </div><!--container-videos-->
+            
+        </div><!--center-->
+    </section>
+
+    <section id="salvos">
+        <div class="center">
+            <div style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610913054739-Z2DKMFOTWB46J8WZLOU7/47.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610908900242-GVWJSW9UAPUONKXC5I44/13.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://wallpaperaccess.com/full/6319352.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://c4.wallpaperflare.com/wallpaper/813/960/923/anime-boys-jujutsu-kaisen-satoru-gojo-anime-food-hd-wallpaper-preview.jpg') ;" class="publicacao-single"></div>
+        </div><!--center-->
+    </section>
+
+    <section id="marcados">
+        <div class="center">
+            <div style="background-image:url('https://images.squarespace-cdn.com/content/v1/5fe4caeadae61a2f19719512/1610908900242-GVWJSW9UAPUONKXC5I44/13.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://wallpaperaccess.com/full/6319352.jpg') ;" class="publicacao-single"></div>
+            <div style="background-image:url('https://c4.wallpaperflare.com/wallpaper/813/960/923/anime-boys-jujutsu-kaisen-satoru-gojo-anime-food-hd-wallpaper-preview.jpg') ;" class="publicacao-single"></div>
+        </div><!--center-->
+    </section>
     
+    <script>
+        const btnFeed = document.getElementsByClassName("single-line-name");
+
+        function removerEstiloAbas(){
+            const btnAntigo = document.getElementsByClassName("single-line-name");
+
+            for(var i = 0; i < btnAntigo.length; i++){
+                btnAntigo[i].children[0].style.display = "none";
+                btnAntigo[i].children[1].style.fontWeight = "lighter";
+            }
+        }
+
+        const mudaFeed = function(){
+            const linha = this.getAttribute("linha");
+            
+            const element = document.getElementById(linha);
+
+            //remover estilo da aba anterior
+            removerEstiloAbas();
+            //oculta todas abas
+            document.getElementById("publicacoes").style.display = "none";
+            document.getElementById("igtv").style.display = "none";
+            document.getElementById("salvos").style.display = "none";
+            document.getElementById("marcados").style.display = "none";
+
+            //exibe aba selecionada
+            element.style.display = "block";
+
+            //adicionar classe troca aba
+            this.children[0].style.display = "block";
+            this.children[1].style.fontWeight = "bold";
+        }
+        for(var i = 0; i < btnFeed.length; i++){
+            btnFeed[i].addEventListener("click", mudaFeed, false);
+        }
+    </script>
 </body>
 </html>
