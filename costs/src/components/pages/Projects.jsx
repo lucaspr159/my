@@ -33,7 +33,7 @@ function Projects(){
                 setRemoveLoading(true)
             })
             .catch((err) => console.log(err))
-        },2000)
+        },1000)
     },[])
 
     function removeProject(id){
