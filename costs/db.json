@@ -2,28 +2,21 @@
   "projects": [
     {
       "name": "bar",
-      "budget": "20000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 500,
-      "services": [
-        {
-          "name": "sddd",
-          "cost": "500",
-          "description": "dds",
-          "id": "646e284b-25f2-456b-9afe-e7f61559a931"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "name": "mercados",
-      "budget": "19900",
+      "budget": "5000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "adad",
+      "budget": "500",
+      "category": {
+        "id": "1",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
